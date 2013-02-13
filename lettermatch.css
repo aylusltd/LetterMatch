@@ -1,0 +1,316 @@
+/* 
+    Document   : lettermatch
+    Created on : Jan 21, 2013, 4:16:50 PM
+    Author     : jasonn
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+body
+{
+    text-align: center;
+    background-image: url(GameDesign3.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    
+}
+
+#prompt, #message
+{
+    font-family: 'Asap', sans-serif;
+    font-weight: 700;
+}
+
+#prompt
+{
+    position: absolute;
+    top:10%;
+    height:10%;
+    width: 80%;
+    left: 10%;    
+}
+
+.letter
+{
+    color: #FFF;
+    width: 20%;
+    height: 25%;
+    border-style: outset;
+    border-width: 2px;
+    position: absolute;
+    float: left;
+    top:50%;
+    font-family: 'Corben', cursive;
+    font-weight: 700;
+    line-height: 168%;
+    cursor: pointer;
+}
+
+#Target
+{
+    top:20%;
+    left: 40%;
+    background-color: rgba(250,200,16,100);
+    float: none;
+    cursor: default;
+}
+
+#left
+{
+    background-color: #00B050;
+    left:15%;
+    
+}
+
+#center
+{
+    left:40%;
+    background-color: rgba(0,162,230,100);
+}
+
+#right
+{
+    left:65%;
+    background-color: rgba(205,100,250,100);
+}
+
+#message
+{
+    position: absolute;
+    bottom: 45%;
+    left: 30%;
+    width: 40%;
+    height: 10%;
+    border-style: solid;
+    border-width: 0px;
+    border-color: green;
+    line-height: 168%;
+}
+
+
+
+/*Smiley Face by C. Bavato from http://bavotasan.com/2010/draw-smiley-face-css3/ 
+Modified for Letterpillar by J. Nichols 01/23/2013
+
+*/
+
+div#caterpillar
+{
+    position: absolute;
+    bottom: 4%;
+    left:0;
+    width: 100%;
+}
+
+div.smileyface {
+	width: 75px;
+	height: 75px;
+	position: relative;
+	border-radius: 37.5px;
+	-webkit-border-radius: 37.5px;
+	-moz-border-radius: 37.5px;
+	display: block;
+	background: #ffe632;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ff0000), to(#f60000));
+	background: -moz-linear-gradient(top,  #ff0000,  #f60000);	
+	box-shadow: inset 0px -3.5px 3.5px rgba(0, 0, 0, .3), 0px 0.5px 5px rgba(0, 0, 0, .6);
+	-webkit-box-shadow: inset 0px -3.5px 3.5px rgba(0, 0, 0, .3), 0px 0.5px 5px rgba(0, 0, 0, .6);
+	-moz-box-shadow: inset 0px -3.5px 3.5px rgba(0, 0, 0, .3), 0px 0.5px 5px rgba(0, 0, 0, .6);
+        font-size : 15px;
+        
+	}
+	
+p.eyes {
+	width: 12.5px;
+	height: 20px;
+	background: #224;
+	border-radius: 25px/40px;
+	-webkit-border-radius: 25px 40px;
+	-moz-border-radius: 25px/40px;
+	position: absolute;
+	top: 2.5px;
+	box-shadow: 0 0.5px 0 rgba(255,0,0, 0.8);
+	-webkit-box-shadow: 0 0.5px 0 rgba(255,0,0, 0.8);
+	-moz-box-shadow: 0 0.5px 0 rgba(255,0,0, 0.8);
+	}	
+	
+	p.eyes.lefteye {
+		left: 18.75px;
+		}
+		
+	p.eyes.righteye {
+		right: 18.75px;
+		}
+		
+div.smile {
+	width: 50px;
+	height: 17.5px;
+	border: 2.5px solid #224;
+	border-top: 0;
+	background: rgba(32,32,64,0);
+	-moz-border-radius: 0 0 30px 30px / 0 0 22.5px 22.5px;
+	-webkit-border-radius: 0 0 30px 30px 0 0 22.5px 22.5px;
+	border-radius: 0 0 30px 30px / 0 0 22.5px 22.5px;
+	position: absolute;
+	bottom: 12.5px;
+	left: 9.5px;
+	/*box-shadow: 0 2px 0 rgba(255,255,255, 0.8);
+	-webkit-box-shadow: 0 2px 0 rgba(255,255,255, 0.8);
+	-moz-box-shadow: 0 2px 0 rgba(255,255,255, 0.8);*/
+	}
+	
+div.corner {
+	width: 2.5px;
+	height: 7.5px;
+	background: #224;
+	border-radius: 25px/40px;
+	-webkit-border-radius: 25px 40px;
+	-moz-border-radius: 25px/40px;
+	position: absolute;
+	top: -3px;
+	-webkit-transform: rotate(65deg);
+	-moz-transform: rotate(65deg);
+	left: -3px;
+	}
+	
+	div.corner.right {
+		left: 50.5px;
+		-webkit-transform: rotate(-65deg);
+		-moz-transform: rotate(-65deg);		
+		}
+
+div.score
+{
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    border-radius: 37.5px;
+    -webkit-border-radius: 37.5px;
+    -moz-border-radius: 37.5px;
+    display: block;
+
+    box-shadow: inset 0px -3.5px 3.5px rgba(0, 0, 0, .3), 0px 0.5px 5px rgba(0, 0, 0, .6);
+    -webkit-box-shadow: inset 0px -3.5px 3.5px rgba(0, 0, 0, .3), 0px 0.5px 5px rgba(0, 0, 0, .6);
+    -moz-box-shadow: inset 0px -3.5px 3.5px rgba(0, 0, 0, .3), 0px 0.5px 5px rgba(0, 0, 0, .6);
+    
+    font-family: 'Corben', cursive;
+    font-weight: 700;
+    line-height: 168%;
+    font-size: 45px;
+    color: rgb(34,34,68);
+}
+                
+div.score.odd {
+	
+        
+    background: #ff0000;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff0000), to(#f60000));
+    background: -moz-linear-gradient(top,  #ff0000,  #f60000);	
+    z-index: 10;
+    bottom: 0;
+}
+
+div.score.even {
+	
+    background: #ffc000;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffC000), to(#EFB000));
+    background: -moz-linear-gradient(top,  #ffC000,  #EFB000);
+    z-index: 9;
+    bottom: 10px;
+}
+        
+div#1 
+{
+    z-index: 10;
+    left: 30%;
+}
+
+div.feet
+{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    border-radius: 7.5px;
+    -webkit-border-radius: 7.5px;
+    -moz-border-radius: 7.5px;
+    display: block;
+
+    box-shadow: inset 0px -0.35px 0.35px rgba(0, 0, 0, .3), 0px 0.25px 2.5px rgba(0, 0, 0, .6);
+    -webkit-box-shadow: inset 0px -0.35px 3.5px rgba(0, 0, 0, .3), 0px 0.25px 2.5px rgba(0, 0, 0, .6);
+    -moz-box-shadow: inset 0px -0.35px 0.35px rgba(0, 0, 0, .3), 0px 0.25px 2.5px rgba(0, 0, 0, .6);
+    
+    font-family: 'Corben', cursive;
+    font-weight: 700;
+    line-height: 168%;
+    font-size: 4.5px;
+    background-color: rgb(34,34,68);
+    bottom: -4px;
+    z-index: 8;
+}
+
+div.feet.lft
+{
+    left:10px;
+}
+
+div.feet.rft{
+    right:10px;
+}
+
+div.antenna
+{
+    background: #ffc000;
+    height: 20px;
+    width: 5px;
+    border: solid 1px #224;
+    top: -15px;
+    position: absolute;
+}
+
+div.antenna.lft
+{
+    left: 10px;
+    transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+}
+
+div.antenna.rt
+{
+    right: 10px;
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+}
+
+div.bob
+{
+    width: 12px;
+    height: 12px;
+    background: #224;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    position: absolute;
+    top: -22px;
+    box-shadow: 0 0.5px 0 rgba(255,0,0, 0.8);
+    -webkit-box-shadow: 0 0.5px 0 rgba(255,0,0, 0.8);
+    -moz-box-shadow: 0 0.5px 0 rgba(255,0,0, 0.8);
+}
+
+div.bob.lft
+{
+    left:1px;
+}
+
+div.bob.rt
+{
+    right:1px;
+}

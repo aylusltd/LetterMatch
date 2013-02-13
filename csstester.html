@@ -1,0 +1,236 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style>
+            .leaf{
+                border-radius: 0 100% 25% 100%;
+                background-color: #00B050;
+                height: 100px;
+                width: 100px;
+                position: fixed;
+                top:50%;
+                box-shadow: inset #363 0px 0px 32px;
+                
+            }
+            
+            .letter
+            {
+                height: 100px;
+                width: 100px;
+                position: fixed;
+                top:50%;
+                text-align: center;
+                line-height: 168%;
+                font-size: 60px;
+                color: white;
+            }
+            
+            .veins
+            {
+                height: 141px;
+                transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg);
+                -o-transform: rotate(-45deg);
+                width: 2px;
+                background-color: #00A040;
+                position: relative;
+                left: 68px;
+            }
+            
+            .shortvein
+            {
+                height: 35px;
+                transform: rotate(45deg);
+                -webkit-transform: rotate(45deg);
+                -o-transform: rotate(45deg);
+                width: 1px;
+                background-color: #00A040;
+                position: relative;
+                
+            }
+            
+            .sv1
+            {
+                top: 30px;
+                left: 45px;
+            }
+            .sv2
+            {
+                top: 50px;
+                left: 65px;
+            }
+            .sv3
+            {
+                top: 70px;
+                left: 85px;
+            }
+            
+            #lf1
+            {
+                left:10%;
+            }
+            
+            #lt1
+            {
+                left:10%;
+            }
+            
+            #lf2
+            {
+                left:20%;
+            }
+            
+            #lt2
+            {
+                left:20%;
+            }
+            
+            #lf3
+            {
+                left:30%;
+            }
+            
+            #lt3
+            {
+                left:30%;
+            }
+            #sun
+            {
+                left: 20%;
+                top:10%;
+                width:100px;
+                height:100px;
+                border-radius: 50px;
+                position: fixed;
+                text-align: center;
+                line-height: 168%;
+                font-size: 60px;
+                color: white;
+                background-color: rgba(250,200,16,100);
+                z-index: 10;
+                box-shadow: inset #FE1 0px 0px 64px;
+            }
+            .rays
+            {
+                width:10px;
+                height:130px;
+                background-color: rgba(250,200,16,100);
+                z-index: 5;
+                position: fixed;
+                left:22.75%;
+                top: 8%;
+                border-radius: 50px;
+                display: none;
+            }
+            #r1
+            {
+                transform: rotate(45deg);
+                -webkit-transform: rotate(45deg);
+                -o-transform: rotate(45deg);
+            }
+            #r2
+            {
+                transform: rotate(90deg);
+                -webkit-transform: rotate(90deg);
+                -o-transform: rotate(90deg);
+            }
+            #r3
+            {
+                transform: rotate(135deg);
+                -webkit-transform: rotate(135deg);
+                -o-transform: rotate(135deg);
+            }
+            #tree
+            {
+                position:fixed;
+                top:0%;
+                left:50%;
+                height:1025px;
+            }
+            #trunk
+            {
+                height:1000px;
+                width:250px;
+                left:125px;
+                top:425px;
+                background-color: #602621;
+                position:absolute;
+            }
+            .cluster
+            {
+                height:200px;
+                width:200px;
+                position:absolute;
+                background-color: #363;
+                border-radius: 50%;
+            }
+            #c1
+            {
+                top:250px;
+                left:-100px;
+            }
+            #c2
+            {
+                top: 125px;
+                left:25px;
+            }
+            #c3
+            {
+                top: 0px;
+                left:150px;
+            }
+            #c4
+            {
+                top: 125px;
+                left:275px;
+            }
+            #c5
+            {
+                top: 250px;
+                left:400px;
+            }
+            #mc
+            {
+                top: 125px;
+                left:25px;
+                height:350px;
+                width: 450px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="sun">B</div>
+        <div id="r1" class="rays"></div>
+        <div id="r2" class="rays"></div>
+        <div id="r3" class="rays"></div>
+        <div id="r4" class="rays"></div>
+        <div id ="lf1" class="leaf" >
+            <div class="veins"></div>
+            <div class="shortvein sv1"></div>
+            <div class="shortvein sv2"></div>
+            <div class="shortvein sv3"></div>
+        </div>
+        <div id ="lf2" class="leaf" ><div class="veins"></div></div>
+        <div id ="lf3" class="leaf" ><div class="veins"></div></div>
+        <div class="letter" id="lt1">A</div>
+        <div class="letter" id="lt2">B</div>
+        <div class="letter" id="lt3">C</div>
+        
+        <div id="tree">
+            <div id="trunk"></div>
+            <div id="c1" class="cluster"></div>
+            <div id="c2" class="cluster"></div>
+            <div id="c3" class="cluster"></div>
+            <div id="c4" class="cluster"></div>
+            <div id="c5" class="cluster"></div>
+            <div id="mc" class="cluster"></div>
+        </div>
+        
+    </body>
+</html>
